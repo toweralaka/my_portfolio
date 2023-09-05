@@ -6,21 +6,48 @@
         <style>
             * {
                 box-sizing: border-box;
+                margin: 0
+            }
+            .main_wrap {
+                width: 70%;
+                margin-left: 15%;
+                margin-right: 15%;
+                margin-top: 2rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .info_wrap {
+                width: 50%;
             }
             .title_text {
                 background-color: purple;
                 color: white;
+                text-align: center;
+                font-size: 24px;
+                margin-bottom: 18px;
+                text-transform: uppercase;
+                padding: 3px;
+                max-width: fit-content;
+                border-radius: 3px;
             }
             .passionate_text {
                 color: black;
+                font-weight: thin;
             }
             .passions {
                 color: purple;
+                margin-bottom: 30px;
+            }
+            a {
+                text-decoration: none;
             }
             .resume_link {
                 color: white;
                 background-color: blue;
                 padding: 10px;
+                border-radius: 4px;
             }
             .project_link {
                 color: blue;
@@ -29,22 +56,30 @@
                 border-width: 1px;
                 border-style: solid;
                 border-color: blue;
+                border-radius: 4px;
+            }
+            .img_div_wrap {
+                width: 50%;
             }
         </style>
     </head>
 
     <body>
         <div class="main_wrap">
-            <div>
+            <div class="info_wrap">
                 <div class="title_text">Software Developer</div>
                 <div class="passionate_text">PASSIONATE ABOUT</div>
                 <h1 class="passions">LEARNING AND DELIVERY</h1>
-                <div>
+                <div class="btn_links_wrap">
                     <a class="resume_link" href="#">Resume</a>
                     <a class="project_link href=" #">Projects</a>
                 </div>
             </div>
-            <img src="olaide.png" />
+            <div class="img_div_wrap">
+                <div class="img_div">
+                    <img src="olaide.png" />
+                </div>
+            </div>
         </div>
     </body>
 

@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+    margin: 0
+}
+.nav_wrap {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    height: 20vh;
+    width: 100%;
+    min-height: 50px;
+    max-height: 70px;
+    align-items: center;
+}
+.logo_link {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    height: 50px;
+    width: 50px;
+}
+.nav_list {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+.nav_item {
+    width: 20%;
+    height: 100%;
+    text-align: center;
+}
+.nav_link {
+    border: 1px solid purple;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+}
+.main_wrap {
+    width: 70%;
+    height: 80vh;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info_wrap {
+    width: 50%;
+    height: 60vh;
+    margin-top: 3.5rem;
+}
+
+.title_text {
+    background: linear-gradient(90deg, #1e30f3 0%, #e21e80 100%);
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    padding: 3px;
+    max-width: fit-content;
+    border-radius: 3px;
+}
+
+.passionate_text {
+    color: black;
+    font-weight: thin;
+}
+
+.passions {
+    /* give text background color */
+    background: linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
+    /* make text color transparent so it can display background color  */
+    -webkit-text-fill-color: transparent;
+    /* trim background around text */
+    -webkit-background-clip: text;
+    margin-bottom: 30px;
+}
+.btn_links_wrap {
+    height: 20%;
+    margin: auto;
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+a {
+    text-decoration: none;
+}
+
+.resume_link {
+    color: white;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.project_link {
+    color: blue;
+    background-color: white;
+    padding: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 4px;
+}
+
+.img_div_wrap {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    height: 60vh;
+}
+.img_div {
+    width: 100%;
+    height: 100%;
+    border-radius: 15%;
+    background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+    position: relative;
+}
+.img_div img {
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: -25%;
+    transform: translate(-50%, 25%);
+}
+@media screen and (max-width: 900px) {
+    .nav_list {
+        display: none;
+    }
+    .main_wrap {
+        height:auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info_wrap {
+        width: 100%;
+        text-align: center;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .title_text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .img_div_wrap {
+        height: 40vh;
+    }
+    .img_div {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+    .img_div img {
+        top: -20%;
+        transform: translate(-50%, 20%);
+    }
+}
